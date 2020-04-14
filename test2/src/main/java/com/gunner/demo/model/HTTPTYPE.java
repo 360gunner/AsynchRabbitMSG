@@ -6,6 +6,7 @@ public enum HTTPTYPE {
 	GET,
 	PUT,
 	PATCH,
-	DELETE
+	DELETE,
+	DELETEBYID
 	
 }

@@ -28,6 +28,15 @@ public class TestListener {
 	  if(tt.getType().equals(HTTPTYPE.POST)) {
 		  r.save(test);
 	  }
+	  if(tt.getType().equals(HTTPTYPE.PUT)) {
+		  r.save(test);
+	  }
+	  if(tt.getType().equals(HTTPTYPE.DELETE)) {
+		  r.delete(test);
+	  }
+	  if(tt.getType().equals(HTTPTYPE.DELETEBYID)) {
+		  r.deleteById(test.getId());
+	  }
   }
   catch(Exception e) {
 	  

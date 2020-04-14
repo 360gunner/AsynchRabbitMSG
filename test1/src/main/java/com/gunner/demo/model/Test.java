@@ -21,6 +21,16 @@ public class Test implements Serializable {
 	public Test() {
 	}
 
+	
+
+	public Test(Integer id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+
+
+
 	public Integer getId() {
 		return this.id;
 	}
