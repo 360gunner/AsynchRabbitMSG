@@ -10,7 +10,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import com.gunner.demo.model.Test;
 
 
-@RepositoryRestResource(collectionResourceRel = "Test", path = "testing")
+@RepositoryRestResource(collectionResourceRel = "Test", path = "test")
 public interface testRepo extends JpaRepository<Test, Integer> {
 
 
