@@ -31,7 +31,7 @@ public class TestController {
 	@Autowired
 	RabbitTestMessagingService r;
 	
-	@GetMapping("/test")
+	@GetMapping(path="/test",produces="application/json")
 	public @ResponseBody ResponseEntity<?> hello_get() { 
 		
 		
@@ -45,7 +45,7 @@ public class TestController {
 		}
 	}
 	
-	@GetMapping("/test/{id}")
+	@GetMapping(path="/test/{id}",produces="application/json")
 	public @ResponseBody ResponseEntity<?> hello_get_id(@PathVariable int id) { 
 		
 		
@@ -59,7 +59,7 @@ public class TestController {
 		}
 	}
 	
-	@PostMapping("/test")
+	@PostMapping(path="/test",produces="application/json")
 	public @ResponseBody ResponseEntity<?> hello_post(@RequestBody Test t) { 
 		
 		
@@ -78,7 +78,7 @@ public class TestController {
 	}
 	
 	
-	@PutMapping("/test")
+	@PutMapping(path="/test",produces="application/json")
 	public @ResponseBody ResponseEntity<?> hello_put(@RequestBody Test t) { 
 		
 		
@@ -97,7 +97,7 @@ public class TestController {
 	}
 	
 	
-	@DeleteMapping("/test")
+	@DeleteMapping(path="/test",produces="application/json")
 	public @ResponseBody ResponseEntity<?> hello_delete(@RequestBody Test t) { 
 		
 		
@@ -115,7 +115,7 @@ public class TestController {
 		}
 	}
 	
-	@DeleteMapping("/test/{id}")
+	@DeleteMapping(path="/test/{id}",produces="application/json")
 	public @ResponseBody ResponseEntity<?> hello_delete_id(@PathVariable int id) { 
 		
 		
